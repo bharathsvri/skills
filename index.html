@@ -8,12 +8,22 @@
   </head>
   <body>
     <div class="skills">
-      <h1>My Skills</h1>
+      <h1 onclick="change()">My Skills</h1>
       <div class="skills-container">
         <div class="skill one"></div>
         <div class="skill two"></div>
         <div class="skill three"></div>
       </div>
     </div>
+    <script>
+        function change(){
+            let one=document.querySelector(".one");
+            let two=document.querySelector(".two");
+            let three=document.querySelector(".three");
+            one.style.backgroundColor="blue";
+            two.style.backgroundColor="blue";
+            three.style.backgroundColor="blue";
+        }
+    </script>
   </body>
 </html>
